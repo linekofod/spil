@@ -1,0 +1,120 @@
+.fall {
+    animation: fall_kf infinite linear;
+  }
+.speed1{
+  animation-duration: 2s;
+}
+.speed2{
+  animation-duration: 3s;
+}
+.speed3{
+  animation-duration: 4s;
+}
+.speed4{
+  animation-duration: 5s;
+}
+  
+  @keyframes fall_kf {
+    from {
+      translate: 0 0;
+    } 
+    to {
+      translate: 0 1400%;
+    }
+  }
+
+.delay1{
+  animation-delay: 3s;
+}
+.delay2{
+  animation-delay: 4s;
+}
+.delay3{
+  animation-delay: 5s;
+}
+
+.freeze {
+  animation-play-state: paused;
+}
+
+.zoom_out {
+    animation: zoom_out_kf 1s 1 both;
+  }
+  
+  @keyframes zoom_out_kf {
+    from {
+      opacity: 1;
+      scale: 1;
+    }
+    to {
+      opacity: 0;
+      scale: 0;
+    }
+  }
+
+.rotate_out {
+    animation: rotate_out_kf 1s 1 both;
+  }
+  
+  @keyframes rotate_out_kf {
+    from {
+      opacity: 1;
+      rotate: 0deg;
+      scale: 2;
+    }
+    to {
+      opacity: 0;
+      rotate: 720deg;
+      scale: 0;
+    }
+  }
+
+  .baggrundChange{
+    animation-name: baggrundChange_kf;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes baggrundChange_kf {
+    0% {
+      background-color: #D0E8F7;
+    }
+    50%{
+      background-color: #B6CBD6; 
+    }
+    100%{
+      background-color: #9EB1BA;
+    }
+  }
+
+  .solnedgang{
+    animation-name: solnedgang_kf;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes solnedgang_kf {
+    0% {
+      translate: 0 0;
+      background-color: #F2D888;
+      box-shadow: 0 0 0.2em 0.2em #F2D888;
+    }
+    50%{
+      translate: 0 140%;
+      background-color: #EDC48A; 
+      box-shadow: 0 0 0.2em 0.2em #EDC48A;
+    }
+    100%{
+      translate: 0 280%;
+      background-color: #EABA8B;
+      box-shadow: 0 0 0.2em 0.2em #EABA8B;
+    }
+  }
+
+  .hide {
+    display: none;
+  }

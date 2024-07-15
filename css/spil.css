@@ -1,0 +1,509 @@
+#screen{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: var(--backgroundColor);
+    overflow: hidden;
+    container-type: inline-size;
+}
+
+#game{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+#baggrund{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-size: cover;
+}
+.baggrund_farve1{
+    background-color: #D0E8F7; 
+}
+.baggrund_farve2{
+    background-color: #9EB1BA; 
+}
+
+
+#skyer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: url(../imgs/skyer.svg);
+    background-size: cover;
+}
+
+#mellemgrund{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: url(../imgs/mellemgrund.svg);
+    background-size: cover;
+}
+
+#forgrund{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: url(../imgs/forgrund.svg);
+    background-size: cover;
+}
+
+#game_elements{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+/* ----- Spil-elementer ----- */
+
+#ella_container{
+	position: absolute;
+	width: 11%;
+	aspect-ratio: 251/403;
+	top: 67%;
+	left: 44%;
+}
+#ella_sprite{
+    background-image: url("../imgs/Ella_bagfra.svg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#banan_container{
+	position: absolute;
+	width: 7%;
+	aspect-ratio: 124/133;
+    transform-origin: center 95%;
+}
+#banan_sprite{
+    background-image: url("../imgs/banan.svg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+#banan_container1{
+	position: absolute;
+	width: 7%;
+	aspect-ratio: 124/133;
+    transform-origin: center 95%;
+}
+#banan_sprite1{
+    background-image: url("../imgs/banan.svg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#kokos_container{
+	position: absolute;
+	width: 7%;
+	aspect-ratio: 129/121;
+}
+#kokos_sprite{
+    background-image: url("../imgs/kokosnød.svg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#umoden_banan_container{
+	position: absolute;
+	width: 7%;
+	aspect-ratio: 124/133;
+}
+#umoden_banan_sprite{
+    background-image: url("../imgs/umoden_banan.svg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+#umoden_banan_container1{
+	position: absolute;
+	width: 7%;
+	aspect-ratio: 124/133;
+}
+#umoden_banan_sprite1{
+    background-image: url("../imgs/umoden_banan.svg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#klase_bananer_container{
+	position: absolute;
+	width: 8%;
+	aspect-ratio: 170/142;
+}
+#klase_bananer_sprite{
+    background-image: url("../imgs/klase_bananer.svg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#mute_btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 91%;
+    left: 92%;
+}
+#mute_btn button{
+    position: absolute;
+    width: 6%;
+    padding: 0.5%;
+    font-family: 'Arima-regular';
+    font-size: 1.2cqw;
+    color: var(--textColor);
+    background-color: #F7E2BF;
+    border-radius: 4px;
+    opacity: 40%;
+    cursor: pointer;
+}
+#mute_btn button:hover{
+    opacity: 100%;
+}
+#unmute_btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 91%;
+    left: 92%;
+}
+#unmute_btn button{
+    position: absolute;
+    width: 6%;
+    padding: 0.5%;
+    font-family: 'Arima-regular';
+    font-size: 1.2cqw;
+    color: var(--textColor);
+    background-color: #F7E2BF;
+    border-radius: 4px;
+    opacity: 40%;
+    cursor: pointer;
+}
+#unmute_btn button:hover{
+    opacity: 100%;
+}
+
+/* ----- Positioner ----- */
+
+.pos1{
+    top: -20%;
+    left: 5%;
+}
+.pos2{
+    top: -20%;
+    left: 12%;
+}
+.pos3{
+    top: -20%;
+    left: 26%;
+}
+.pos4{
+    top: -20%;
+    left: 37%;
+}
+.pos5{
+    top: -20%;
+    left: 48%;
+}
+.pos6{
+    top: -20%;
+    left: 55%;
+}
+.pos7{
+    top: -20%;
+    left: 64%;
+}
+.pos8{
+    top: -20%;
+    left: 76%;
+}
+.pos9{
+    top: -20%;
+    left: 83%;
+}
+.pos10{
+    top: -20%;
+    left: 90%;
+}
+
+/* ----- UI-elementer ----- */
+
+#game_ui{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#point_x{
+    position: absolute;
+    width: 7%;
+    aspect-ratio: 127/100;
+    top: 3%;
+    left: 79%;
+    background-image: url("../imgs/point.svg");
+    background-size: cover;
+}
+#point_tal{
+    position: absolute;
+    top: 5%;
+    left: 87%;
+    font-family: 'Arima-light';
+    font-size: 2.5cqw;
+}
+#point_glas_container{
+    position: absolute;
+    width: 7%;
+    aspect-ratio: 127/235;
+    top: 2%;
+    left: 89%;
+}
+#point_glas_sprite{
+    background-image: url("../imgs/banana_shake_tomt.svg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.point_glas1{
+    background-image: url("../imgs/banana_shake1.svg");
+    background-size: cover;
+}
+.point_glas2{
+    background-image: url("../imgs/banana_shake2.svg");
+    background-size: cover;
+}
+.point_glas3{
+    background-image: url("../imgs/banana_shake3.svg");
+    background-size: cover;
+}
+.point_glas4{
+    background-image: url("../imgs/banana_shake4.svg");
+    background-size: cover;
+}
+.point_glas5{
+    background-image: url("../imgs/banana_shake5.svg");
+    background-size: cover;
+}
+.point_glas6{
+    background-image: url("../imgs/banana_shake6.svg");
+    background-size: cover;
+}
+.point_glas7{
+    background-image: url("../imgs/banana_shake7.svg");
+    background-size: cover;
+}
+.point_glas8{
+    background-image: url("../imgs/banana_shake8.svg");
+    background-size: cover;
+}
+.point_glas9{
+    background-image: url("../imgs/banana_shake9.svg");
+    background-size: cover;
+}
+.point_glas10{
+    background-image: url("../imgs/banana_shake_fuldt.svg");
+    background-size: cover;
+}
+
+#liv1, #liv2, #liv3{
+    position: absolute;
+    width: 5%;
+    aspect-ratio: 57/53;
+    top: 4%;
+    left: 2%;
+    background-image: url("../imgs/liv_enkeltvis.svg");
+    background-size: cover;
+}
+#liv2{
+    left: 8%;
+}
+#liv3{
+    left: 14%;
+}
+
+#tid_sol{
+    position: absolute;
+    top: 11%;
+    left: 46.5%;
+    width: 7%;
+    height: 12.5%;
+    border-radius: 50%;
+    background-color: #F2D888;
+    box-shadow: 0 0 0.2em 0.2em #F2D888;
+}
+
+/* ----- Start- og slutskærme ----- */
+
+#start{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: url("../imgs/startskærm.svg");
+    background-size: cover;
+}
+#start_knap{
+	position: absolute;
+	width: 22%;
+	top: 74%;
+	left: 41%;
+	aspect-ratio: 407/232;
+	background-image: url("../imgs/start_knap.svg");
+	background-size: 100%;
+    cursor: pointer;
+}
+#start_knap:hover{
+    width: 24%;
+    top: 73%;
+    left: 40%;
+}
+#regler_knap1{
+	position: absolute;
+	width: 2%;
+	top: 89%;
+	left: 95%;
+	aspect-ratio: 36/62;
+	background-image: url("../imgs/til_regler.svg");
+	background-size: 100%;
+    cursor: pointer;
+}
+#regler_knap1:hover{
+    width: 2.5%;
+    top: 88.5%;
+    left: 94.8%;
+}
+#regler1{
+    position: absolute;
+	width: 28%;
+	top: 36%;
+	left: 65%;
+	aspect-ratio: 319/399;
+	background-image: url("../imgs/regler.svg");
+	background-size: 100%;
+}
+
+#game_over{
+    position: absolute;
+    width: 80%;
+    aspect-ratio: 1522/913;
+    top: 8%;
+    left: 10%;
+    background-image: url("../imgs/game_over.svg");
+    background-size: cover;
+}
+#prøv_igen{
+	position: absolute;
+	width: 27%;
+	top: 58%;
+	left: 36%;
+	aspect-ratio: 375/215;
+	background-image: url("../imgs/prøv_igen.svg");
+	background-size: 100%;
+    cursor: pointer;
+}
+#prøv_igen:hover{
+    width: 29%;
+    top: 57%;
+    left: 35%;
+}
+#regler_knap2{
+	position: absolute;
+	width: 2%;
+	top: 87%;
+	left: 92%;
+	aspect-ratio: 36/62;
+	background-image: url("../imgs/til_regler.svg");
+	background-size: 100%;
+    cursor: pointer;
+}
+#regler_knap2:hover{
+    width: 2.5%;
+    top: 86.5%;
+    left: 91.8%;
+}
+#regler2{
+    position: absolute;
+	width: 30%;
+	top: 34%;
+	left: 60%;
+	aspect-ratio: 319/399;
+	background-image: url("../imgs/regler.svg");
+	background-size: 100%;
+}
+#startskærm_knap1{
+	position: absolute;
+	width: 5%;
+	top: 9%;
+	left: 5%;
+	aspect-ratio: 64/58;
+	background-image: url("../imgs/til_startskærmen.svg");
+	background-size: 100%;
+    cursor: pointer;
+}
+#startskærm_knap1:hover{
+    width: 5.5%;
+    top: 8.5%;
+    left: 4.8%;
+}
+
+#level_complete{
+    width: 100%;
+    aspect-ratio: 1920/974;
+    position: absolute;
+    top: 4%;
+    left: 0;
+    background-image: url("../imgs/level_complete.svg");
+    background-size: cover;
+}
+#spil_igen{
+	position: absolute;
+	width: 22%;
+	top: 65%;
+	left: 42%;
+	aspect-ratio: 375/215;
+	background-image: url("../imgs/spil_igen.svg");
+	background-size: 100%;
+    cursor: pointer;
+}
+#spil_igen:hover{
+    width: 24%;
+    top: 64%;
+    left: 41%;
+}
+#startskærm_knap2{
+	position: absolute;
+	width: 4%;
+	top: 28%;
+	left: 7%;
+	aspect-ratio: 64/58;
+	background-image: url("../imgs/til_startskærmen.svg");
+	background-size: 100%;
+    cursor: pointer;
+}
+#startskærm_knap2:hover{
+    width: 4.5%;
+    top: 27.5%;
+    left: 6.8%;
+}
+

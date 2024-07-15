@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/spil.css" />
+    <link rel="stylesheet" href="css/animationer.css" />
+    <link rel="icon" type="image/png" href="favicon/favicon_1.png" />
+    <title>Forside</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Forside</a>
+          </li>
+          <li><a href="spil.html">Spil</a></li>
+          <li><a href="grafik.html">Grafik</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="teknik.html">Teknik</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="baggrund"></div>
+          <div id="skyer"></div>
+          <div id="game_ui">
+            <div id="point">
+              <div id="point_x"></div>
+              <div id="point_tal"></div>
+              <div id="point_glas_container">
+                <div id="point_glas_sprite"></div>
+              </div>
+            </div>
+            <div id="liv">
+              <div id="liv1"></div>
+              <div id="liv2"></div>
+              <div id="liv3"></div>
+            </div>
+            <div id="tid">
+              <div id="tid_sol"></div>
+            </div>
+          </div>
+          <div id="mellemgrund"></div>
+          <div id="forgrund"></div>
+          <div id="game_elements">
+            <div id="mute_btn"><button>Mute</button></div>
+            <div id="unmute_btn"><button>Unmute</button></div>
+            <div id="ella_container">
+              <div id="ella_sprite"></div>
+            </div>
+            <div id="banan_container">
+              <div id="banan_sprite"></div>
+            </div>
+            <div id="banan_container1">
+              <div id="banan_sprite1"></div>
+            </div>
+            <div id="kokos_container">
+              <div id="kokos_sprite"></div>
+            </div>
+            <div id="umoden_banan_container">
+              <div id="umoden_banan_sprite"></div>
+            </div>
+            <div id="umoden_banan_container1">
+              <div id="umoden_banan_sprite1"></div>
+            </div>
+            <div id="klase_bananer_container">
+              <div id="klase_bananer_sprite"></div>
+            </div>
+          </div>
+        </div>
+        <div id="start">
+          <div id="start_knap"></div>
+          <div id="regler_knap1"></div>
+          <div id="regler1"></div>
+        </div>
+        <div id="game_over">
+          <div id="prøv_igen"></div>
+          <div id="regler_knap2"></div>
+          <div id="regler2"></div>
+          <div id="startskærm_knap1"></div>
+        </div>
+        <div id="level_complete">
+          <div id="spil_igen"></div>
+          <div id="startskærm_knap2"></div>
+        </div>
+      </div>
+    </main>
+    <audio src="sounds/waves1.mp3" id="bg"></audio>
+    <audio src="sounds/yay.mp3" id="banan"></audio>
+    <audio src="sounds/ad.mp3" id="umoden_banan"></audio>
+    <audio src="sounds/øv.mp3" id="kokos"></audio>
+    <footer>© 2023, Line Kofod Thomsen</footer>
+    <script src="js/spil.js"></script>
+  </body>
+</html>
